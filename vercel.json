@@ -1,0 +1,31 @@
+{
+    "rewrites": [
+      { "source": "/(.*)", "destination": "/$1.html" }
+    ],
+    "redirects": [
+      { "source": "/about.html", "destination": "/about", "permanent": true },
+      { "source": "/appointment.html", "destination": "/appointment", "permanent": true },
+      { "source": "/blog.html", "destination": "/blog", "permanent": true },
+      { "source": "/contact-us.html", "destination": "/contact-us", "permanent": true },
+      { "source": "/cosmetic.html", "destination": "/cosmetic", "permanent": true },
+      { "source": "/crown.html", "destination": "/crown", "permanent": true },
+      { "source": "/dental-kids.html", "destination": "/dental-kids", "permanent": true },
+      { "source": "/dental-lab.html", "destination": "/dental-lab", "permanent": true },
+      { "source": "/dentalcheckup1.html", "destination": "/dentalcheckup1", "permanent": true },
+      { "source": "/dentistsviz1.html", "destination": "/dentistsviz1", "permanent": true },
+      { "source": "/dentistsviz2.html", "destination": "/dentistsviz2", "permanent": true },
+      { "source": "/dentistry.html", "destination": "/dentistry", "permanent": true },
+      { "source": "/implant.html", "destination": "/implant", "permanent": true },
+      { "source": "/index.html", "destination": "/", "permanent": true },
+      { "source": "/orthodontics.html", "destination": "/orthodontics", "permanent": true },
+      { "source": "/pediatric.html", "destination": "/pediatric", "permanent": true },
+      { "source": "/periodontics.html", "destination": "/periodontics", "permanent": true },
+      { "source": "/restorative.html", "destination": "/restorative", "permanent": true },
+      { "source": "/rootcanal.html", "destination": "/rootcanal", "permanent": true },
+      { "source": "/services.html", "destination": "/services", "permanent": true },
+      { "source": "/surgery.html", "destination": "/surgery", "permanent": true },
+      { "source": "/teeth-whitening.html", "destination": "/teeth-whitening", "permanent": true },
+      { "source": "/tmj.html", "destination": "/tmj", "permanent": true }
+    ]
+  }
+  

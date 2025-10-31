@@ -1,0 +1,13 @@
+body{
+	--e-global-color-primary					: #0E384C;
+	--e-global-color-secondary					: #F9FCFF;
+	--e-global-color-text						: #527282;
+	--e-global-color-accent						: #1E84B5;
+	--e-global-color-white						: #FFFFFF;
+	--e-global-color-divider					: #0E384C12;
+	--e-global-color-darkdivider				: #FFFFFF1F;
+	--e-global-typography-primary-font-family	: "Montserrat", sans-serif;
+	--e-global-typography-secondary-font-family	: "Montserrat", sans-serif;
+	--e-global-typography-text-font-family		: "Montserrat", sans-serif;
+	--e-global-typography-accent-font-family    : "Montserrat", sans-serif; 
+}
