@@ -5393,8 +5393,8 @@ aside.widget .wp-block-social-links{
 }
 
 .v2-service-item .box-body p{
-	border-bottom: 1px solid var(--e-global-color-divider);
-	padding-bottom: 30px;
+	/* border-bottom: 1px solid var(--e-global-color-divider); */
+	/* padding-bottom: 30px; */
 	transition: all 0.3s ease-in-out;
 }
 
