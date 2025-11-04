@@ -805,6 +805,109 @@
       }
     }
 
+    .btn-enquiry {
+      background: #007bff;
+      border: 1px solid #007bff;
+      border-radius: 50%;
+      box-shadow: 0 8px 10px rgba(0, 123, 255, 0.3);
+      cursor: pointer;
+      height: 60px;
+      width: 60px;
+      text-align: center;
+      position: fixed;
+      right: 20px;
+      bottom: 66px;
+      z-index: 999;
+      transition: .3s;
+      animation: enqHoverWave 1s infinite linear;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+    }
+
+    .btn-enquiry__ico {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      animation: enqShake 1.2s infinite ease;
+      color: white;
+      font-size: 26px;
+      transition: .3s;
+    }
+
+    .btn-enquiry:hover {
+      background-color: #fff;
+    }
+
+    .btn-enquiry:hover .btn-enquiry__ico {
+      color: #007bff;
+    }
+
+    /* Glow Effect (blue tone) */
+    @keyframes enqHoverWave {
+      0% {
+        box-shadow: 0 8px 10px rgba(0, 123, 255, 0.3), 0 0 0 0 rgba(0, 123, 255, 0.2);
+      }
+
+      40% {
+        box-shadow: 0 8px 10px rgba(0, 123, 255, 0.3), 0 0 0 15px rgba(0, 123, 255, 0.2);
+      }
+
+      80% {
+        box-shadow: 0 8px 10px rgba(0, 123, 255, 0.3), 0 0 0 30px rgba(0, 123, 255, 0);
+      }
+
+      100% {
+        box-shadow: 0 8px 10px rgba(0, 123, 255, 0.3), 0 0 0 40px rgba(0, 123, 255, 0);
+      }
+    }
+
+    /* Icon Shake Animation (same as WhatsApp) */
+    @keyframes enqShake {
+
+      0%,
+      100% {
+        transform: rotate(0deg);
+      }
+
+      10% {
+        transform: rotate(-15deg);
+      }
+
+      20% {
+        transform: rotate(10deg);
+      }
+
+      30% {
+        transform: rotate(-10deg);
+      }
+
+      40% {
+        transform: rotate(7.5deg);
+      }
+
+      50% {
+        transform: rotate(-6deg);
+      }
+
+      60% {
+        transform: rotate(5deg);
+      }
+
+      70% {
+        transform: rotate(-4deg);
+      }
+
+      80% {
+        transform: rotate(3.75deg);
+      }
+
+      90% {
+        transform: rotate(-3deg);
+      }
+    }
+
 
     .video-slider-container {
       overflow-x: hidden;
@@ -1441,6 +1544,7 @@
           position: absolute;
           width: 100%;
           height: 100%;
+          background: rgba(0, 0, 0, 0.45);
           /* background: linear-gradient(135deg, rgba(102, 126, 234, 0.8) 0%, rgba(118, 75, 162, 0.8) 100%); */
           z-index: 1;
         }
@@ -1764,8 +1868,8 @@
 
 
           <!-- Slide 1 -->
-          <div class="slide">
-            <img src="gallery/bannerlatest.jpeg" alt="Dental Care" class="slide-image">
+          <!-- <div class="slide">
+            <img src="gallery/bannerlatest.jpg" alt="Dental Care" class="slide-image">
             <div class="slide-overlay"></div>
             <div class="slide-content">
               <h1 class="slide-heading">26 YEARS OF EXCELLENCY</h1>
@@ -1844,19 +1948,23 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div> -->
 
           <!-- Slide 2 -->
           <div class="slide">
-            <img src="gallery/pexels-pixabay-52527.jpg" alt="Modern Dental Equipment" class="slide-image">
+            <img src="gallery/pexels-pixabay-52527.jpg" alt="Advanced Dental Equipment" class="slide-image">
             <div class="slide-overlay"></div>
             <div class="slide-content">
-              <h1 class="slide-heading">ADVANCED DENTAL TECHNOLOGY</h1>
+              <h1 class="slide-heading">
+                26 YEARS OF EXCELLENCE IN ADVANCED DENTAL TECHNOLOGY
+              </h1>
               <p class="slide-description">
-                State-of-the-art equipment and modern techniques for the best dental care experience.
+                Experience world-class dental care with advanced technology, modern techniques, and compassionate
+                professionals.
+                We ensure your comfort while delivering precise, long-lasting results you can smile about.
               </p>
               <a href="appointment.html" class="slide-button">
-                <span>Schedule Consultation</span>
+                <span>Book Your Consultation</span>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14" fill="none">
                   <path d="M1 7H15M15 7L9 1M15 7L9 13" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                     stroke-linejoin="round" />
@@ -1867,7 +1975,7 @@
 
           <!-- Slide 3 -->
           <div class="slide">
-            <img src="gallery/orthodontics.jpg" alt="Happy Patient" class="slide-image">
+            <img src="gallery/bannerlatest.jpg" alt="Happy Patient" class="slide-image">
             <div class="slide-overlay"></div>
             <div class="slide-content">
               <h1 class="slide-heading">YOUR SMILE, OUR PASSION</h1>
@@ -2118,6 +2226,15 @@
         </div>
       </a>
       <!--================================ whatsapp icon end  here ==============================================-->
+
+      <!--================================ Enquiry icon start here ========================================-->
+      <a href="./enquiry.html" class="btn-enquiry" title="Enquiry">
+        <div class="btn-enquiry__ico">
+          <i class="fas fa-envelope"></i>
+        </div>
+      </a>
+      <!--================================ Enquiry icon end here ==============================================-->
+
 
       <!-- ====================About Us Start here================================ -->
       <div class="elementor-element elementor-element-b8b334b e-flex e-con-boxed e-con e-parent" data-id="b8b334b"
